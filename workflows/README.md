@@ -1,8 +1,8 @@
 # Workflows
 
-这里记录个人 AI 工作流实践、模板和复盘方法。
+这里不是记录个人流水账，而是把网络上的 AI agent 使用经验整理成可借鉴的个人工作流模式。
 
 当前入口：
 
-- [personal-ai-workflow.md](personal-ai-workflow.md)
+- [external-practice-patterns.md](external-practice-patterns.md)
 
