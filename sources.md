@@ -12,6 +12,16 @@
 - [Anthropic: A harness for every task](https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code)
 - [AgentWay: Claude Code workflows](https://agentway.dev/en/claudecode/workflows)
 
+## GitHub 趋势入口
+
+- [GitHub Trending: daily](https://github.com/trending?since=daily)
+- [GitHub Trending: weekly](https://github.com/trending?since=weekly)
+- [GitHub Trending: Python weekly](https://github.com/trending/python?since=weekly)
+- [GitHub Trending: TypeScript weekly](https://github.com/trending/typescript?since=weekly)
+- [GitHub Trending: Jupyter Notebook weekly](https://github.com/trending/jupyter-notebook?since=weekly)
+
+筛选时优先关注和 coding agents、AI workflow、agent harness、developer productivity、MCP、CLI automation、repo analysis、testing/verification 相关的项目。趋势项目不只记录热度，还要拆解它解决的痛点、采用的方法、可迁移的工作流启发。
+
 ## 治理、安全和权限边界
 
 - [TechRadar: governance controls for AI coding agents](https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it)
@@ -42,4 +52,3 @@
 - dynamic workflows coding agent
 - worktree agent workflow
 - agent governance isolate scope approve
-

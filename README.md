@@ -40,10 +40,9 @@ AI Agent Harness 实用工作流学习库：持续收集网络上个人开发者
 每周一 09:00（Asia/Shanghai）运行一次 Codex 自动化任务：
 
 - 收集网络上关于 AI Agent Harness、coding agents、个人 AI 工作流、团队 agent 使用规范的实用资料
-- 优先看官方文档、工程博客、真实团队实践、社区高质量经验贴
+- 优先看官方文档、工程博客、真实团队实践、社区高质量经验贴，以及 GitHub 每日/每周趋势中的相关项目
 - 生成 `weekly/YYYY-MM-DD.md`
 - 更新本 README 和 `weekly/README.md` 的周报索引
 - 如有新增内容，提交并推送到 GitHub
 
 周报默认包含来源链接；不确定结论标注为“推断”或“待验证”。每篇周报至少提炼一个“可迁移到个人工作流的 harness 实践”。
-
