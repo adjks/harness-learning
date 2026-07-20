@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>知识聚合体架构图</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f5f7fb;
+      --ink: #172033;
+      --muted: #657286;
+      --hairline: #d7deea;
+      --panel: #ffffff;
+      --portal: #fff2d7;
+      --portal-strong: #c97d12;
+      --source: #e8f1ff;
+      --source-strong: #2e6fd8;
+      --knowledge: #e8f8ee;
+      --knowledge-strong: #23865a;
+      --agent: #f4e9ff;
+      --agent-strong: #8250c8;
+      --api: #eef0ff;
+      --api-strong: #5258ce;
+      --shadow: 0 22px 60px rgba(31, 45, 68, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(201, 125, 18, 0.12), transparent 26%),
+        radial-gradient(circle at 88% 12%, rgba(82, 88, 206, 0.12), transparent 30%),
+        linear-gradient(135deg, #fbfcff 0%, var(--page) 54%, #eef7f2 100%);
+    }
+
+    main {
+      width: min(1360px, 100%);
+      margin: 0 auto;
+      padding: 32px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      max-width: 880px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .legend {
+      display: grid;
+      gap: 9px;
+      min-width: 254px;
+      padding: 14px 16px;
+      border: 1px solid rgba(215, 222, 234, 0.9);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: 0 12px 28px rgba(31, 45, 68, 0.08);
+    }
+
+    .legend-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .dot {
+      width: 13px;
+      height: 13px;
+      border-radius: 4px;
+      border: 2px solid currentColor;
+      flex: 0 0 auto;
+    }
+
+    .architecture {
+      padding: 28px;
+      border: 1px solid rgba(215, 222, 234, 0.92);
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .map {
+      display: grid;
+      grid-template-columns:
+        minmax(180px, 0.82fr)
+        54px
+        minmax(240px, 1.1fr)
+        54px
+        minmax(250px, 1.16fr)
+        54px
+        minmax(220px, 0.98fr);
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    .lane {
+      display: grid;
+      gap: 12px;
+      min-width: 0;
+      padding: 14px;
+      border: 1px solid rgba(215, 222, 234, 0.78);
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(250, 252, 255, 0.64));
+    }
+
+    .lane-title {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .card {
+      min-width: 0;
+      padding: 16px;
+      border: 1.5px solid var(--accent);
+      border-radius: 16px;
+      background: var(--tint);
+      box-shadow: 0 12px 26px rgba(31, 45, 68, 0.08);
+    }
+
+    .card.primary {
+      padding: 18px;
+      border-width: 2px;
+    }
+
+    .card h2,
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    .card h3 {
+      font-size: 15px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #3f4b5d;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .card ul {
+      display: grid;
+      gap: 7px;
+      margin: 12px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .card li {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      color: #354154;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .card li::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      margin-top: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+      flex: 0 0 auto;
+    }
+
+    .actor {
+      --tint: #fff0e4;
+      --accent: #e8782d;
+    }
+
+    .portal {
+      --tint: var(--portal);
+      --accent: var(--portal-strong);
+    }
+
+    .source {
+      --tint: var(--source);
+      --accent: var(--source-strong);
+    }
+
+    .knowledge {
+      --tint: var(--knowledge);
+      --accent: var(--knowledge-strong);
+    }
+
+    .api {
+      --tint: var(--api);
+      --accent: var(--api-strong);
+    }
+
+    .agent {
+      --tint: var(--agent);
+      --accent: var(--agent-strong);
+    }
+
+    .stack {
+      display: grid;
+      gap: 10px;
+    }
+
+    .rail {
+      display: grid;
+      grid-template-rows: 1fr auto 1fr;
+      gap: 8px;
+      align-items: center;
+      justify-items: center;
+      min-width: 54px;
+      padding: 8px 0;
+    }
+
+    .rail::before,
+    .rail::after {
+      content: "";
+      width: 2px;
+      height: 100%;
+      min-height: 34px;
+      border-radius: 99px;
+      background: linear-gradient(180deg, transparent, var(--hairline), transparent);
+    }
+
+    .rail span {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 999px;
+      color: #3b4657;
+      background: #fff;
+      border: 1px solid var(--hairline);
+      box-shadow: 0 10px 24px rgba(31, 45, 68, 0.1);
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr auto 1fr;
+      gap: 12px;
+      align-items: center;
+      margin-top: 22px;
+      padding: 18px;
+      border-radius: 20px;
+      background: #f8fafd;
+      border: 1px solid rgba(215, 222, 234, 0.86);
+    }
+
+    .flow-step {
+      min-width: 0;
+      padding: 14px;
+      border-radius: 14px;
+      background: #fff;
+      border: 1px solid var(--hairline);
+    }
+
+    .flow-step strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .flow-step span {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .arrow {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 2px;
+      background: var(--hairline);
+      position: relative;
+    }
+
+    .arrow::after {
+      content: "";
+      position: absolute;
+      right: -1px;
+      width: 9px;
+      height: 9px;
+      border-top: 2px solid var(--hairline);
+      border-right: 2px solid var(--hairline);
+      transform: rotate(45deg);
+      background: transparent;
+    }
+
+    .notes {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .note {
+      padding: 15px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(215, 222, 234, 0.9);
+      border-top: 4px solid var(--accent);
+    }
+
+    .note h3 {
+      margin: 0 0 8px;
+      font-size: 15px;
+    }
+
+    .note p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 1120px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .legend {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        min-width: 0;
+      }
+
+      .map {
+        grid-template-columns: 1fr;
+      }
+
+      .rail {
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: auto;
+        min-width: 0;
+        padding: 0;
+      }
+
+      .rail::before,
+      .rail::after {
+        width: 100%;
+        height: 2px;
+        min-height: 0;
+        background: linear-gradient(90deg, transparent, var(--hairline), transparent);
+      }
+
+      .rail span {
+        transform: rotate(90deg);
+      }
+    }
+
+    @media (max-width: 760px) {
+      main {
+        padding: 20px;
+      }
+
+      .architecture {
+        padding: 18px;
+        border-radius: 22px;
+      }
+
+      .legend,
+      .flow,
+      .notes {
+        grid-template-columns: 1fr;
+      }
+
+      .arrow {
+        width: 2px;
+        height: 32px;
+        justify-self: center;
+      }
+
+      .arrow::after {
+        right: auto;
+        bottom: -1px;
+        transform: rotate(135deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div>
+        <h1>知识聚合体架构图</h1>
+        <p class="subtitle">把知识门户、WeKnora / LLMWiki 知识库、Pi Agent CLI 组织成一个稳定的知识工作台：门户负责发现，知识库负责沉淀，Agent CLI 负责行动。</p>
+      </div>
+      <aside class="legend" aria-label="图例">
+        <div class="legend-row"><span class="dot" style="background: var(--portal); color: var(--portal-strong);"></span>知识门户</div>
+        <div class="legend-row"><span class="dot" style="background: var(--source); color: var(--source-strong);"></span>知识源 / 内部系统</div>
+        <div class="legend-row"><span class="dot" style="background: var(--knowledge); color: var(--knowledge-strong);"></span>WeKnora / LLMWiki</div>
+        <div class="legend-row"><span class="dot" style="background: var(--agent); color: var(--agent-strong);"></span>Pi Agent CLI</div>
+      </aside>
+    </header>
+
+    <section class="architecture" aria-label="知识聚合体架构">
+      <div class="map">
+        <section class="lane" aria-label="使用者入口">
+          <p class="lane-title">User Interface</p>
+          <article class="card actor primary">
+            <h2>人 / Agent 使用者</h2>
+            <p>从门户发现知识，也可以从 CLI 直接发起任务。</p>
+            <ul>
+              <li>查询与阅读</li>
+              <li>摘要与写作</li>
+              <li>触发自动化</li>
+            </ul>
+          </article>
+        </section>
+
+        <div class="rail" aria-hidden="true"><span>→</span></div>
+
+        <section class="lane" aria-label="知识门户">
+          <p class="lane-title">Knowledge Portal</p>
+          <article class="card portal primary">
+            <h2>知识门户</h2>
+            <p>统一导航、搜索和深链入口，是整个知识工作台的第一视图。</p>
+          </article>
+          <div class="stack">
+            <article class="card source">
+              <h3>图书馆</h3>
+              <p>电子书 / PDF / EPUB</p>
+            </article>
+            <article class="card source">
+              <h3>内部知识文档</h3>
+              <p>制度 / 项目 / 经验</p>
+            </article>
+            <article class="card source">
+              <h3>内部系统托管</h3>
+              <p>业务系统 / Dashboard / 工具入口</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="rail" aria-hidden="true"><span>→</span></div>
+
+        <section class="lane" aria-label="知识库">
+          <p class="lane-title">Knowledge Base</p>
+          <article class="card knowledge primary">
+            <h2>WeKnora + LLMWiki</h2>
+            <p>把分散材料沉淀为可检索、可问答、可编译、可被 Agent 调用的知识资产。</p>
+          </article>
+          <div class="stack">
+            <article class="card knowledge">
+              <h3>知识采集与整理</h3>
+              <p>上传 / 同步 / 清洗 / 分块</p>
+            </article>
+            <article class="card knowledge">
+              <h3>LLMWiki 编译</h3>
+              <p>Markdown Wiki / 知识图谱</p>
+            </article>
+            <article class="card knowledge">
+              <h3>混合检索</h3>
+              <p>Vector / BM25 / GraphRAG</p>
+            </article>
+            <article class="card api">
+              <h3>MCP / REST API</h3>
+              <p>检索 / 上传 / 管理</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="rail" aria-hidden="true"><span>→</span></div>
+
+        <section class="lane" aria-label="Agent CLI">
+          <p class="lane-title">Agent Bridge</p>
+          <article class="card agent primary">
+            <h2>Pi Agent CLI</h2>
+            <p>把自然语言任务转成工具调用和可复用工作流。</p>
+            <ul>
+              <li>Agent Loop</li>
+              <li>Tool Calling</li>
+              <li>CLI / RPC / SDK</li>
+            </ul>
+          </article>
+          <article class="card agent">
+            <h2>任务执行</h2>
+            <p>查询、摘要、写作、自动化，并把结果回到门户或知识库。</p>
+          </article>
+        </section>
+      </div>
+
+      <div class="flow" aria-label="核心关系">
+        <div class="flow-step">
+          <strong>采集 / 清洗 / 分块</strong>
+          <span>门户中的图书、文档和系统链接进入知识整理流程。</span>
+        </div>
+        <div class="arrow" aria-hidden="true"></div>
+        <div class="flow-step">
+          <strong>MCP / REST API</strong>
+          <span>知识库把检索、上传和管理能力暴露给 Agent CLI。</span>
+        </div>
+        <div class="arrow" aria-hidden="true"></div>
+        <div class="flow-step">
+          <strong>深链 / 搜索入口 / 上下文引用</strong>
+          <span>门户与 Agent 都可以回到 Wiki、RAG 问答或内部系统。</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes" aria-label="架构说明">
+      <article class="note" style="--accent: var(--portal-strong);">
+        <h3>门户负责发现</h3>
+        <p>它不是另一个知识库，而是把图书、文档、系统入口和问答深链组织成一个总导航。</p>
+      </article>
+      <article class="note" style="--accent: var(--knowledge-strong);">
+        <h3>知识库负责沉淀</h3>
+        <p>WeKnora / LLMWiki 把材料变成 Wiki、图谱、RAG 检索和可被 MCP / API 调用的能力。</p>
+      </article>
+      <article class="note" style="--accent: var(--agent-strong);">
+        <h3>Agent 负责行动</h3>
+        <p>Pi Agent CLI 连接人、知识库和内部系统上下文，让知识进入实际任务执行过程。</p>
+      </article>
+    </section>
+
+    <footer>
+      这版采用稳定的泳道式信息图布局，避免使用漂浮窗口和自由曲线箭头；适合继续构思，也适合后续导出为汇报用图片。
+    </footer>
+  </main>
+</body>
+</html>

@@ -5,4 +5,5 @@
 当前路线：
 
 - [project-roadmap.md](project-roadmap.md)
-
+- [knowledge-aggregate-architecture.md](knowledge-aggregate-architecture.md)
+- [knowledge-aggregate-architecture.html](knowledge-aggregate-architecture.html)
