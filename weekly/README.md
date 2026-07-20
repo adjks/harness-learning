@@ -1,5 +1,9 @@
 # Weekly Notes
 
+## Latest
+
+- [2026-07-20 — evidence-driven agent environments](2026-07-20.md)
+
 每周自动生成的 AI Agent Harness 网络实践周报会放在这里。
 
 每篇周报应优先详细拆解资料，而不是只做短摘要。对每个重要资料，至少回答：
