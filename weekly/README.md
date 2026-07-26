@@ -20,6 +20,14 @@
 - GitHub daily trending 和 weekly trending 中与 coding agents、AI workflow、agent harness、developer productivity 相关的仓库
 - 相关论文、benchmark 和评测报告
 
+增量规则：
+
+- 每次写新周报前，先扫描已有 `weekly/*.md` 和 `sources.md`，整理已经覆盖过的 URL、仓库名和主题。
+- 已经在之前周报中详细拆解过的资料，不要再次作为主资料重复拆解。
+- 只有当旧资料出现重大更新、新版本、新 release、新案例或新争议时，才可以再次引用，并明确说明“本次新增信息是什么”。
+- GitHub Trending 项目如果之前已记录过，只追踪新增 release、README 重大变化或围绕该项目出现的新工作流实践。
+- 每篇周报应包含一个“本周新增资料”小节，避免把历史资料和新增资料混在一起。
+
 当前周报：
 
 - [2026-07-17.md](2026-07-17.md)

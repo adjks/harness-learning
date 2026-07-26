@@ -45,6 +45,7 @@ AI Agent Harness 实用工作流学习库：持续收集网络上个人开发者
 
 - 收集网络上关于 AI Agent Harness、coding agents、个人 AI 工作流、团队 agent 使用规范的实用资料
 - 优先看官方文档、工程博客、真实团队实践、社区高质量经验贴，以及 GitHub 每日/每周趋势中的相关项目
+- 采用增量采集：先检查已有周报和 `sources.md`，已经拆解过的资料默认不重复写；只补充新资料、新仓库，或旧资料的重大更新
 - 生成 `weekly/YYYY-MM-DD.md`
 - 更新本 README 和 `weekly/README.md` 的周报索引
 - 如有新增内容，提交并推送到 GitHub

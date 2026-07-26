@@ -22,6 +22,8 @@
 
 筛选时优先关注和 coding agents、AI workflow、agent harness、developer productivity、MCP、CLI automation、repo analysis、testing/verification 相关的项目。趋势项目不只记录热度，还要拆解它解决的痛点、采用的方法、可迁移的工作流启发。
 
+采集时保持增量：如果某个趋势仓库、文章、官方文档或论文已经在 `weekly/` 中详细拆解过，后续周报默认跳过；只有出现重大更新、新 release、新案例或新的实践争议时才再次纳入，并标注新增点。
+
 ## 治理、安全和权限边界
 
 - [TechRadar: governance controls for AI coding agents](https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it)
