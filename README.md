@@ -2,7 +2,7 @@
 
 ## Latest Weekly Note
 
-- [2026-07-20 — evidence-driven agent environments](weekly/2026-07-20.md)
+- [2026-07-27 — recoverable agent tasks and evidence-led review](weekly/2026-07-27.md)
 
 AI Agent Harness 实用工作流学习库：持续收集网络上个人开发者、工程团队和工具厂商如何驾驭 coding agents 的实践，再提炼成可借鉴的工作流模式。
 

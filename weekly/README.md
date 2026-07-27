@@ -2,7 +2,7 @@
 
 ## Latest
 
-- [2026-07-20 — evidence-driven agent environments](2026-07-20.md)
+- [2026-07-27 — recoverable agent tasks and evidence-led review](2026-07-27.md)
 
 每周自动生成的 AI Agent Harness 网络实践周报会放在这里。
 
