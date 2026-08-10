@@ -2,6 +2,7 @@
 
 ## Latest
 
+- [2026-08-10 — governed long-running agents and evidence-backed memory](2026-08-10.md)
 - [2026-07-27 — recoverable agent tasks and evidence-led review](2026-07-27.md)
 
 每周自动生成的 AI Agent Harness 网络实践周报会放在这里。
