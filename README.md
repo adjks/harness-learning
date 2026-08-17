@@ -2,6 +2,7 @@
 
 ## Latest Weekly Note
 
+- [2026-08-17 — task control planes, durable sandboxes, and measured harness optimization](weekly/2026-08-17.md)
 - [2026-08-10 — governed long-running agents and evidence-backed memory](weekly/2026-08-10.md)
 - [2026-07-27 — recoverable agent tasks and evidence-led review](weekly/2026-07-27.md)
 

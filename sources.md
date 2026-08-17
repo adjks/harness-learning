@@ -11,6 +11,9 @@
 - [OpenAI: Codex App Server](https://openai.com/index/unlocking-the-codex-harness/)
 - [OpenAI: Running Codex safely](https://openai.com/index/running-codex-safely/)
 - [OpenAI: Scientific computing in the age of agentic AI](https://openai.com/index/scientific-computing-agentic-ai/)
+- [OpenAI: Agents SDK evolution](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
+- [OpenAI: Symphony orchestration](https://openai.com/index/open-source-codex-orchestration-symphony/)
+- [OpenAI: GPT-5.6 harness efficiency](https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/)
 - [VS Code: The Coding Harness Behind GitHub Copilot](https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode)
 - [Anthropic: A harness for every task](https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code)
 - [AgentWay: Claude Code workflows](https://agentway.dev/en/claudecode/workflows)
@@ -32,6 +35,8 @@
 - [LoopX](https://github.com/huangruiteng/loopx)
 - [TencentDB Agent Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)
 - [Agent Skills](https://github.com/addyosmani/agent-skills)
+- [Symphony](https://github.com/openai/symphony)
+- [MemoHarness](https://github.com/HowieHwong/MemoHarness)
 
 采集时保持增量：如果某个趋势仓库、文章、官方文档或论文已经在 `weekly/` 中详细拆解过，后续周报默认跳过；只有出现重大更新、新 release、新案例或新的实践争议时才再次纳入，并标注新增点。
 
@@ -46,6 +51,7 @@
 - [Code as Agent Harness](https://arxiv.org/abs/2605.18747)
 - [Meta-Engineering Harnesses for AI-Native Software Production](https://arxiv.org/abs/2605.25665)
 - [Harnessing Agentic Evolution](https://arxiv.org/abs/2605.13821)
+- [MemoHarness: Agent Harnesses That Learn from Experience](https://arxiv.org/abs/2607.14159)
 
 ## Benchmarks and evaluation
 
