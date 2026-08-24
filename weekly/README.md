@@ -2,6 +2,7 @@
 
 ## Latest
 
+- [2026-08-24 — portable capabilities, event-triggered agents, and hard verification](2026-08-24.md)
 - [2026-08-17 — task control planes, durable sandboxes, and measured harness optimization](2026-08-17.md)
 - [2026-08-10 — governed long-running agents and evidence-backed memory](2026-08-10.md)
 - [2026-07-27 — recoverable agent tasks and evidence-led review](2026-07-27.md)
@@ -32,4 +33,9 @@
 
 当前周报：
 
+- [2026-08-24.md](2026-08-24.md)
+- [2026-08-17.md](2026-08-17.md)
+- [2026-08-10.md](2026-08-10.md)
+- [2026-07-27.md](2026-07-27.md)
+- [2026-07-20.md](2026-07-20.md)
 - [2026-07-17.md](2026-07-17.md)

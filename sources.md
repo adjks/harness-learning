@@ -14,6 +14,8 @@
 - [OpenAI: Agents SDK evolution](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
 - [OpenAI: Symphony orchestration](https://openai.com/index/open-source-codex-orchestration-symphony/)
 - [OpenAI: GPT-5.6 harness efficiency](https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/)
+- [GitHub: Agent Plugins 1.0](https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/)
+- [GitHub: comment-triggered Copilot automations](https://github.blog/changelog/2026-08-03-trigger-copilot-automations-with-comments/)
 - [VS Code: The Coding Harness Behind GitHub Copilot](https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode)
 - [Anthropic: A harness for every task](https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code)
 - [AgentWay: Claude Code workflows](https://agentway.dev/en/claudecode/workflows)
@@ -52,12 +54,18 @@
 - [Meta-Engineering Harnesses for AI-Native Software Production](https://arxiv.org/abs/2605.25665)
 - [Harnessing Agentic Evolution](https://arxiv.org/abs/2605.13821)
 - [MemoHarness: Agent Harnesses That Learn from Experience](https://arxiv.org/abs/2607.14159)
+- [Harnessing Code Agents for Automatic Software Verification (Aria)](https://arxiv.org/abs/2607.06341)
 
 ## Benchmarks and evaluation
 
 - [SWE-Bench Pro](https://arxiv.org/abs/2509.16941)
 - [SWE-Bench](https://www.swebench.com/)
 - [Terminal-Bench](https://www.tbench.ai/)
+
+## 能力封装、工具治理与可运行参考
+
+- [GitHub: MCP allowlists in enterprise managed settings](https://github.blog/changelog/2026-08-06-mcp-allowlists-in-enterprise-managed-settings/)
+- [thecarbonlayer/carbon](https://github.com/thecarbonlayer/carbon)
 
 ## 搜索关键词
 
