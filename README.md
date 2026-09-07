@@ -2,6 +2,7 @@
 
 ## Latest Weekly Note
 
+- [2026-09-07 — intent control planes, risk-tiered autonomy, and fresh approvals](weekly/2026-09-07.md)
 - [2026-08-24 — portable capabilities, event-triggered agents, and hard verification](weekly/2026-08-24.md)
 - [2026-08-17 — task control planes, durable sandboxes, and measured harness optimization](weekly/2026-08-17.md)
 - [2026-08-10 — governed long-running agents and evidence-backed memory](weekly/2026-08-10.md)

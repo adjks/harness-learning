@@ -19,6 +19,11 @@
 - [VS Code: The Coding Harness Behind GitHub Copilot](https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode)
 - [Anthropic: A harness for every task](https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code)
 - [AgentWay: Claude Code workflows](https://agentway.dev/en/claudecode/workflows)
+- [Anthropic: The AI-Native SDLC playbook](https://claude.com/blog/the-ai-native-sdlc-playbook)
+- [Anthropic: Claude Code guide for startups](https://claude.com/blog/claude-code-guide-for-startups)
+- [Anthropic: Claude Code Auto mode](https://claude.com/blog/auto-mode-default-in-claude-code)
+- [GitHub: content exclusions in Copilot app and CLI](https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/)
+- [GitHub: Copilot code review approvals](https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/)
 
 ## GitHub 趋势入口
 
@@ -66,6 +71,7 @@
 
 - [GitHub: MCP allowlists in enterprise managed settings](https://github.blog/changelog/2026-08-06-mcp-allowlists-in-enterprise-managed-settings/)
 - [thecarbonlayer/carbon](https://github.com/thecarbonlayer/carbon)
+- [SUNRNEHUI/agent-harness](https://github.com/SUNRNEHUI/agent-harness)
 
 ## 搜索关键词
 
