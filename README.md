@@ -2,6 +2,7 @@
 
 ## Latest Weekly Note
 
+- [2026-09-14 — durable execution, effective policy, and convergence gates](weekly/2026-09-14.md)
 - [2026-09-07 — intent control planes, risk-tiered autonomy, and fresh approvals](weekly/2026-09-07.md)
 - [2026-08-24 — portable capabilities, event-triggered agents, and hard verification](weekly/2026-08-24.md)
 - [2026-08-17 — task control planes, durable sandboxes, and measured harness optimization](weekly/2026-08-17.md)
@@ -40,6 +41,7 @@ AI Agent Harness 实用工作流学习库：持续收集网络上个人开发者
 
 - 前沿地图：[research/frontier-map.md](research/frontier-map.md)
 - 实践模式：[workflows/external-practice-patterns.md](workflows/external-practice-patterns.md)
+- 个人工作系统：[workflows/personal-evidence-loop/](workflows/personal-evidence-loop/)
 - 项目路线：[projects/project-roadmap.md](projects/project-roadmap.md)
 - 第一篇周报：[weekly/2026-07-17.md](weekly/2026-07-17.md)
 

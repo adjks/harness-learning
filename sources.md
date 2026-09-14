@@ -14,6 +14,8 @@
 - [OpenAI: Agents SDK evolution](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
 - [OpenAI: Symphony orchestration](https://openai.com/index/open-source-codex-orchestration-symphony/)
 - [OpenAI: GPT-5.6 harness efficiency](https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/)
+- [OpenAI: Introducing the Agents API](https://openai.com/index/introducing-the-agents-api/)
+- [OpenAI: Research acceleration](https://openai.com/index/research-acceleration-view-inside-openai/)
 - [GitHub: Agent Plugins 1.0](https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/)
 - [GitHub: comment-triggered Copilot automations](https://github.blog/changelog/2026-08-03-trigger-copilot-automations-with-comments/)
 - [VS Code: The Coding Harness Behind GitHub Copilot](https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode)
@@ -24,6 +26,8 @@
 - [Anthropic: Claude Code Auto mode](https://claude.com/blog/auto-mode-default-in-claude-code)
 - [GitHub: content exclusions in Copilot app and CLI](https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/)
 - [GitHub: Copilot code review approvals](https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/)
+- [GitHub: Enterprise managed permissions for Copilot agent operations](https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/)
+- [GitHub: Enterprise-managed sandbox in Copilot for JetBrains](https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/)
 
 ## GitHub 趋势入口
 
@@ -44,6 +48,8 @@
 - [Agent Skills](https://github.com/addyosmani/agent-skills)
 - [Symphony](https://github.com/openai/symphony)
 - [MemoHarness](https://github.com/HowieHwong/MemoHarness)
+- [OpenAI Plugins](https://github.com/openai/plugins)
+- [GitHub Spec Kit](https://github.com/github/spec-kit)
 
 采集时保持增量：如果某个趋势仓库、文章、官方文档或论文已经在 `weekly/` 中详细拆解过，后续周报默认跳过；只有出现重大更新、新 release、新案例或新的实践争议时才再次纳入，并标注新增点。
 
