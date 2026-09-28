@@ -28,6 +28,10 @@
 - [GitHub: Copilot code review approvals](https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/)
 - [GitHub: Enterprise managed permissions for Copilot agent operations](https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/)
 - [GitHub: Enterprise-managed sandbox in Copilot for JetBrains](https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/)
+- [GitHub: local sandboxing in the Copilot app](https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/)
+- [GitHub: OpenTelemetry in the Copilot app](https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/)
+- [GitHub: agentic autofix uses Copilot Memory](https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/)
+- [Google Cloud: Agent Factory harness recap](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-agent-harnesses-shifting-left-and-autonomous-coding)
 
 ## GitHub 趋势入口
 
@@ -50,6 +54,8 @@
 - [MemoHarness](https://github.com/HowieHwong/MemoHarness)
 - [OpenAI Plugins](https://github.com/openai/plugins)
 - [GitHub Spec Kit](https://github.com/github/spec-kit)
+- [Cloudflare Security Audit Skill](https://github.com/cloudflare/security-audit-skill)
+- [Strands Harness SDK](https://github.com/strands-agents/harness-sdk)
 
 采集时保持增量：如果某个趋势仓库、文章、官方文档或论文已经在 `weekly/` 中详细拆解过，后续周报默认跳过；只有出现重大更新、新 release、新案例或新的实践争议时才再次纳入，并标注新增点。
 
@@ -66,6 +72,7 @@
 - [Harnessing Agentic Evolution](https://arxiv.org/abs/2605.13821)
 - [MemoHarness: Agent Harnesses That Learn from Experience](https://arxiv.org/abs/2607.14159)
 - [Harnessing Code Agents for Automatic Software Verification (Aria)](https://arxiv.org/abs/2607.06341)
+- [Control the Harness, Control the Cost: Routing and Governing AI Coding Agents in the Enterprise](https://arxiv.org/abs/2609.28919)
 
 ## Benchmarks and evaluation
 
