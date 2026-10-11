@@ -2,6 +2,7 @@
 
 ## Latest
 
+- [2026-10-11 — workflow code, GA isolation, and recoverable context](2026-10-11.md)
 - [2026-09-28 — traceable runs, verifier-owned stops, and cache-aware routing](2026-09-28.md)
 - [2026-09-14 — durable execution, effective policy, and convergence gates](2026-09-14.md)
 - [2026-09-07 — intent control planes, risk-tiered autonomy, and fresh approvals](2026-09-07.md)
@@ -36,6 +37,7 @@
 
 当前周报：
 
+- [2026-10-11.md](2026-10-11.md)
 - [2026-09-28.md](2026-09-28.md)
 - [2026-09-14.md](2026-09-14.md)
 - [2026-09-07.md](2026-09-07.md)
