@@ -32,6 +32,7 @@
 - [GitHub: Dynamic workflows in Copilot CLI and Copilot app](https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/)
 - [GitHub: Copilot local sandboxing is generally available](https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/)
 - [GitHub: purpose-built model for leaked secret detection](https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection/)
+- [GitHub: Copilot for JetBrains default-model and MCP startup controls](https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/)
 - [OpenAI: How OpenAI uses Codex](https://cdn.openai.com/pdf/6a2631dc-783e-479b-b1a4-af0cfbd38630/how-openai-uses-codex.pdf)
 - [GitHub: OpenTelemetry in the Copilot app](https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/)
 - [GitHub: agentic autofix uses Copilot Memory](https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/)
@@ -61,6 +62,8 @@
 - [Cloudflare Security Audit Skill](https://github.com/cloudflare/security-audit-skill)
 - [Strands Harness SDK](https://github.com/strands-agents/harness-sdk)
 - [Context Mode](https://github.com/mksglu/context-mode)
+- [Cursor Plugins](https://github.com/cursor/plugins)
+- [Claude-Mem](https://github.com/thedotmack/claude-mem)
 
 采集时保持增量：如果某个趋势仓库、文章、官方文档或论文已经在 `weekly/` 中详细拆解过，后续周报默认跳过；只有出现重大更新、新 release、新案例或新的实践争议时才再次纳入，并标注新增点。
 
