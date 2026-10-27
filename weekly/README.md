@@ -2,6 +2,7 @@
 
 ## Latest
 
+- [2026-10-27 — agent-scale throughput, phased work, and reversible context](2026-10-27.md)
 - [2026-10-19 — verified repair loops, fresh policy, and minimal telemetry](2026-10-19.md)
 - [2026-10-12 — explicit defaults, throttled learning, and durable context](2026-10-12.md)
 - [2026-10-11 — workflow code, GA isolation, and recoverable context](2026-10-11.md)
@@ -39,6 +40,7 @@
 
 当前周报：
 
+- [2026-10-27.md](2026-10-27.md)
 - [2026-10-19.md](2026-10-19.md)
 - [2026-10-12.md](2026-10-12.md)
 - [2026-10-11.md](2026-10-11.md)

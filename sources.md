@@ -41,6 +41,8 @@
 - [GitHub: OpenTelemetry in the Copilot app](https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/)
 - [GitHub: agentic autofix uses Copilot Memory](https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/)
 - [Google Cloud: Agent Factory harness recap](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-agent-harnesses-shifting-left-and-autonomous-coding)
+- [Harness: Scaling source control and CI for AI coding agents](https://www.harness.io/blog/when-code-stops-being-the-bottleneck)
+- [Infobip: A phased workflow for operating LLM-based coding agents](https://arxiv.org/abs/2608.30701)
 
 ## GitHub 趋势入口
 
@@ -69,6 +71,8 @@
 - [Cursor Plugins](https://github.com/cursor/plugins)
 - [Claude-Mem](https://github.com/thedotmack/claude-mem)
 - [October Harness](https://github.com/october-dev/october-harness)
+- [ai-memory](https://github.com/akitaonrails/ai-memory)
+- [Headroom](https://github.com/headroomlabs-ai/headroom)
 
 采集时保持增量：如果某个趋势仓库、文章、官方文档或论文已经在 `weekly/` 中详细拆解过，后续周报默认跳过；只有出现重大更新、新 release、新案例或新的实践争议时才再次纳入，并标注新增点。
 
@@ -86,6 +90,7 @@
 - [MemoHarness: Agent Harnesses That Learn from Experience](https://arxiv.org/abs/2607.14159)
 - [Harnessing Code Agents for Automatic Software Verification (Aria)](https://arxiv.org/abs/2607.06341)
 - [Control the Harness, Control the Cost: Routing and Governing AI Coding Agents in the Enterprise](https://arxiv.org/abs/2609.28919)
+- [Beyond the Model: Demystifying Harness Effects in Software Engineering Agents](https://arxiv.org/abs/2609.32459)
 
 ## Benchmarks and evaluation
 
